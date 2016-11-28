@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+}
+
+html{
+    font-family: "小塚ゴシック Pro", sans-serif;
+    font-weight: lighter;
+    margin:0;
+    height:100%;
+}
+
+h1 {
+    font-size: 0.6vw;
+    font-weight: lighter;
+    line-height: 2em;
+    letter-spacing: 0.7vw;
+}
+
+h2 {
+    font-size: 1.45vw;
+    font-weight: lighter;
+    line-height: 1em;
+    letter-spacing: 0.3vw;
+}
+
+h3 {
+    font-size:0.6em;
+    font-weight: 400;
+    line-height: 0.8em;
+    letter-spacing: 0.5vw;
+}
+
+h4 {
+    font-size:0.5em;
+    font-weight: lighter;
+    line-height: 3em;
+}
+
+h5 {
+    font-size:1em;
+    font-weight:200;
+}
+
+hr {
+    border:none;
+    border-top:1px dotted;
+    color: #C19E84;
+    height:1px;
+    width:80%;
+    margin-left:10%;
+}
+
+.jp {
+    font-family: "小塚ゴシック Pr6N";
+}
+
+
+
+/*navigational menu*/
+
+.nav-width {
+    width:18%;
+    display:inline-block;
+    position: absolute;
+    left:0;
+    top:0;
+    border-right-style: dotted;
+    border-right-width:1px;
+    border-color: #C19E84;
+    height:100%;
+}
+
+.nav-main {
+        padding: 1vh 0 1vh 2vw;
+        transition: 0.5s;
+    }
+
+.nav-main a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+
+.nav-main:hover {
+    background-color: #c19E84;
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-main:hover a{
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-header {
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+}
+
+.nav-info {
+    padding-top:2vh; 
+    padding-left:1vw;
+}
+
+.nav-links-top-spacing {
+    padding-top:4vh;
+}
+
+.nav-links-bottom-spacing {
+    padding-bottom:6vh !important;
+}
+
+.nav-links {
+    padding-left:4vw;
+    padding-bottom:2.5vh;
+}
+
+.active {
+    background-color: #c19E84;
+
+}
+
+.active a{
+    color: white;
+}
+
+/*content*/
+
+
+.hero-img {
+    display:block;
+    width:82vw;
+    height:100vh;
+    object-fit: cover;
+    object-position: 100% 0;
+}
