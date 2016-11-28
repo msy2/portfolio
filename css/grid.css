@@ -3,19 +3,8 @@
     box-sizing: border-box;
 }
 
-.nav-width {
-    width:18%;
-    display:inline-block;
-    position: absolute;
-    left:0;
-    top:0;
-    border-right-style: dotted;
-    border-right-width:1px;
-    border-color: #C19E84;
-    height:100%;
-}
-
 .main-content {
+	width: 82%;
     position:absolute;
     left:18%;
 }
