@@ -3,12 +3,6 @@
     box-sizing: border-box;
 }
 
-.main-content {
-	width: 82%;
-    position:absolute;
-    left:18%;
-}
-
 .col-1of12 {width: 8.33%;}
 .col-2of12 {width: 16.66%;}
 .col-3of12 {width: 25%;}
@@ -30,8 +24,5 @@
     clear: both;
     display: block;
 }
-
-
-@media only screen and (max-width: 768px) {
 
 }
