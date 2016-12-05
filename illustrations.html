@@ -9,11 +9,64 @@
 	<link rel="stylesheet" href="css/main.css"> 
 	<link rel="stylesheet" href="css/grid.css"> 
 
+<!-- ***************************************************************** -->
+<!-- code from http://fancyapps.com/fancybox/ -->
+<!-- ***************************************************************** -->
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+<!-- 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> -->
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>
+
+
+<!-- turns alt tab into image caption on image enlarge-->
+	<script type="text/javascript">
+		$(function(){
+			$(".fancybox").fancybox({
+			    beforeShow : function() {
+			        var alt = this.element.find('img').attr('alt');
+			        
+			        this.inner.find('img').attr('alt', alt);
+			        
+			        this.title = alt;
+			    }
+			});
+	    });
+	</script>
+
+
+<!-- ***************************************************************** -->
+<!-- end code from http://fancyapps.com/fancybox/ -->
+<!-- ***************************************************************** -->
+
+
+
 </head>
 
 
-<body>
 
+
+
+<body>
 <div> <!-- page wrap div begin -->
 
 
@@ -119,7 +172,7 @@
 		<!-- footer end -->
 
 
-		
+
 	</div>
 <!-- end of main nav -->
 
@@ -131,7 +184,7 @@
 			<div class="page-heading-title"><h1>GALLERY</h1><hr></div>
 			<div class="page-heading-links">
 				<ul>
-					<li><a href="illustrations.html" class="page-heading-links-active">unsorted</a></li>
+					<li><a href="illustrations.html" class="page-heading-links-active">all images</a></li>
 					<li><a href="illustrations_characterdesigns.html">character design</a></li>
 				</ul>
 			</div>
@@ -139,47 +192,88 @@
 
 		<!-- page content -->
 		<div class="page-content">
-			<div class="thumbnail-image-wrapper"><a href="img/attila.jpg" ><img src="img/attila.jpg" class="thumbnail-image" alt="Attila character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/Nero.jpg"><img src="img/Nero.jpg" class="thumbnail-image" alt="Nero character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/attila.jpg" class="fancybox" rel="group"><img src="img/attila.jpg" class="thumbnail-image" alt="Attila character illustration for self-published book &quot;Voltage&quot;"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/tshirt_CMYK 1.jpg" ><img src="img/tshirt_CMYK 1.jpg" class="thumbnail-image" alt=" character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/Nero.jpg" class="fancybox" rel="group"><img src="img/Nero.jpg" class="thumbnail-image" alt="Nero character illustration for self-published book &quot;Voltage&quot;"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/CCS.jpg" ><img src="img/CCS.jpg" class="thumbnail-image" alt="Cardcaptor Sakura character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/tshirt_CMYK 1.jpg" class="fancybox" rel="group"><img src="img/tshirt_CMYK 1.jpg" class="thumbnail-image" alt="Shigure and Yuudachi character illustration for self-published t-shirt design"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/dod3.jpg" ><img src="img/dod3.jpg" class="thumbnail-image" alt="Drakengard 3 character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/CCS.jpg" class="fancybox" rel="group"><img src="img/CCS.jpg" class="thumbnail-image" alt="Cardcaptor Sakura print illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/clearfile.jpg" ><img src="img/clearfile.jpg" class="thumbnail-image" alt="Shiratsuyu class character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/dod3.jpg" class="fancybox" rel="group"><img src="img/dod3.jpg" class="thumbnail-image" alt="Zero from Drakengard 3 print illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/rkgk jeanne alter.jpg" ><img src="img/rkgk jeanne alter.jpg" class="thumbnail-image" alt="Jeanne Alter character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/clearfile.jpg" class="fancybox" rel="group"><img src="img/clearfile.jpg" class="thumbnail-image" alt="Shiratsuyu class character illustration for Comic Market 89 event"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/genos.jpg" ><img src="img/genos.jpg" class="thumbnail-image" alt="Genos character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/rkgk jeanne alter.jpg" class="fancybox" rel="group"><img src="img/rkgk jeanne alter.jpg" class="thumbnail-image" alt="Jeanne Alter character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/kiso.jpg" ><img src="img/kiso.jpg" class="thumbnail-image" alt="Kiso character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/genos.jpg" class="fancybox" rel="group"><img src="img/genos.jpg" class="thumbnail-image" alt="Genos print illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/ktkm.jpg" ><img src="img/ktkm.jpg" class="thumbnail-image" alt="Kitakami character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/kiso.jpg" class="fancybox" rel="group"><img src="img/kiso.jpg" class="thumbnail-image" alt="Kiso character illustration for self-published book &quot;Fair Winds &amp; Following Seas&quot;"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/engawa_color.jpg" ><img src="img/engawa_color.jpg" class="thumbnail-image" alt="Kitakami & Ooi character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/ktkm.jpg" class="fancybox" rel="group"><img src="img/ktkm.jpg" class="thumbnail-image" alt="Kitakami character illustration for self-published book &quot;Fair Winds &amp; Following Seas&quot;"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/7.jpg" ><img src="img/7.jpg" class="thumbnail-image" alt="707 character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/engawa_color.jpg" class="fancybox" rel="group"><img src="img/engawa_color.jpg" class="thumbnail-image" alt="Kitakami & Ooi illustration for self-published book &quot;Bon Appetit!&quot;"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/glasses.jpg" ><img src="img/glasses.jpg" class="thumbnail-image" alt="Shigure character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/7.jpg" class="fancybox" rel="group"><img src="img/7.jpg" class="thumbnail-image" alt="707 character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/pf sheet.jpg" ><img src="img/pf sheet.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/glasses.jpg" class="fancybox" rel="group"><img src="img/glasses.jpg" class="thumbnail-image" alt="Shigure character illustration for self-published book &quot;Bon Appetit!&quot;"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/adopt 1.jpg" ><img src="img/adopt 1.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/pf sheet.jpg" class="fancybox" rel="group"><img src="img/pf sheet.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/pf2015.jpg" ><img src="img/pf2015.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/adopt 1.jpg" class="fancybox" rel="group"><img src="img/adopt 1.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/rpg chara.jpg" ><img src="img/rpg chara.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/pf2015.jpg" class="fancybox" rel="group"><img src="img/pf2015.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/mars2016.jpg" ><img src="img/mars2016.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/rpg chara.jpg" class="fancybox" rel="group"><img src="img/rpg chara.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
 
-			<div class="thumbnail-image-wrapper"><a href="img/SotF.jpg" ><img src="img/SotF.jpg" class="thumbnail-image" alt="Sound of the Future poster illustration"></a></div>
+			<div class="thumbnail-image-wrapper"><a href="img/mars2016.jpg" class="fancybox" rel="group"><img src="img/mars2016.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
 
-		</div>
+			<div class="thumbnail-image-wrapper"><a href="img/SotF.jpg" class="fancybox" rel="group"><img src="img/SotF.jpg" class="thumbnail-image" alt="Sound of the Future poster illustration"></a></div>
+
+		<noscript>
+			<div class="thumbnail-image-wrapper"><a href="img/attila.jpg" target="_blank"><img src="img/attila.jpg" class="thumbnail-image" alt="Attila character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/Nero.jpg" target="_blank"><img src="img/Nero.jpg" class="thumbnail-image" alt="Nero character illustration for self-published book &quot;Voltage&quot;"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/tshirt_CMYK 1.jpg" target="_blank"><img src="img/tshirt_CMYK 1.jpg" class="thumbnail-image" alt="Shigure and Yuudachi character illustration for self-published t-shirt design"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/CCS.jpg" target="_blank"><img src="img/CCS.jpg" class="thumbnail-image" alt="Cardcaptor Sakura print illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/dod3.jpg" target="_blank"><img src="img/dod3.jpg" class="thumbnail-image" alt="Zero from &quot;Drakengard 3&quot; print illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/clearfile.jpg" target="_blank"><img src="img/clearfile.jpg" class="thumbnail-image" alt="Shiratsuyu class character illustration for Comic Market 89 event"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/rkgk jeanne alter.jpg" target="_blank"><img src="img/rkgk jeanne alter.jpg" class="thumbnail-image" alt="Jeanne Alter character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/genos.jpg" target="_blank"><img src="img/genos.jpg" class="thumbnail-image" alt="Genos print illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/kiso.jpg" target="_blank"><img src="img/kiso.jpg" class="thumbnail-image" alt="Kiso character illustration for self-published book &quot;Fair Winds &amp; Following Seas&quot;"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/ktkm.jpg" target="_blank"><img src="img/ktkm.jpg" class="thumbnail-image" alt="Kitakami character illustration for self-published book &quot;Fair Winds &amp; Following Seas&quot;"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/engawa_color.jpg" target="_blank"><img src="img/engawa_color.jpg" class="thumbnail-image" alt="Kitakami & Ooi illustration for self-published book &quot;Bon Appetit!&quot;"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/7.jpg" target="_blank"><img src="img/7.jpg" class="thumbnail-image" alt="707 character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/glasses.jpg" target="_blank"><img src="img/glasses.jpg" class="thumbnail-image" alt="Shigure character illustration for self-published book &quot;Bon Appetit!&quot;"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/pf sheet.jpg" target="_blank"><img src="img/pf sheet.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/adopt 1.jpg" target="_blank"><img src="img/adopt 1.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/pf2015.jpg" target="_blank"><img src="img/pf2015.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/rpg chara.jpg" target="_blank"><img src="img/rpg chara.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/mars2016.jpg" target="_blank"><img src="img/mars2016.jpg" class="thumbnail-image" alt="Original character illustration"></a></div>
+
+			<div class="thumbnail-image-wrapper"><a href="img/SotF.jpg" target="_blank"><img src="img/SotF.jpg" class="thumbnail-image" alt="Sound of the Future poster illustration"></a></div>
+		</noscript>
 
 
+
+		</div><!--  end of page content -->
 
 	</div>
 <!-- end of content -->
