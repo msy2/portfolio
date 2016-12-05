@@ -9,13 +9,43 @@
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="stylesheet" href="css/grid.css"> 
 
+
+<!-- ***************************************************************** -->
+<!-- code from http://fancyapps.com/fancybox/ -->
+<!-- ***************************************************************** -->
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+<!--    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> -->
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
+
 </head>
 
 
+
+
+
+
 <body>
-
-
-
 <div> <!-- page wrap div begin -->
 
 
@@ -31,17 +61,24 @@
 <!-- styleguide menu -->
 <ul style="list-style-type: none; line-height: 1.2em">
 
+    <li><a href="#back-to-top">Back to Top Button</a></li>
     <li><a href="#text">Text</a></li>
     <li><a href="#colours">Colours</a></li>
     <li><a href="#navbar">Navbar</a></li>
     <li><a href="#page-heading">Page Heading</a></li>
     <li><a href="#page-heading-links">Page Heading Links</a></li>
     <li><a href="#bulleted-lists">Bulleted Lists</a></li>
+    <li><a href="#images">Images</a></li>
 
 </ul>
+<br>
+
+
+
 
 <!-- content begin -->
 
+<!-- return to top button -->
     <div class="back-to-top-link" style="left:91%">
         <a href="#top" class="link-no-underline">
             <ul class="back-to-top-text">
@@ -54,24 +91,33 @@
 
     <div class="circle" style="left:91%; !important"></div>
 
-<div style="padding:2em">
 
 
+<!-- pagewrapper -->
+<div style="padding:2em 2em 10em 2em">
+
+<!-- back to top button section -->
 <div>
 <section id="back-to-top"><h1>BACK TO TOP BUTTON</h1></section><hr>
 <div style="padding:2em 0 0 2em">
     <div>
-        <ul>
-            <li>CSS Selector: .back-to-top</li>
-            <li>Sample code: <code><div class="back-to-top-link" style="left:91%">
-        <a href="#top" class="link-no-underline">
-            <ul class="back-to-top-text">
-                <li>▲</li>
-                <li>RETURN</li>
-                <li>TO TOP</li>
-            </ul>
-        </a>
-    </div></code>
+        <ul style="list-style-type: none; padding-left: 0">
+            <li>See bottom right corner of screen for sample.</li><br>
+            <li><strong>CSS Selector:</strong> .back-to-top-link, .back-to-sop-text</li>
+            <li><strong>Sample code:</strong> 
+            <div style="background-color:#EEE; width:50%; padding:1em 0 1em 3em">
+            <code >
+                &lt; div class="back-to-top-link" style="left:91%"&gt; <br>
+                &lt;a href="#top" class="link-no-underline"&gt; <br>
+                &lt;ul class="back-to-top-text"&gt; <br>
+                &lt;li&gt;▲&lt;/li&gt; <br> 
+                &lt;li>RETURN&lt;/li&gt; <br>
+                &lt;li>TO TOP&lt;/li&gt; <br>
+                &lt;/ul&gt; <br>
+                &lt;/a&gt; <br>
+                &lt;/div&gt; <br>
+            </code>
+            </div>
     </li>
         </ul>
     </div>
@@ -114,7 +160,7 @@
 
                 <!-- about link div -->
                 <div class="col-3of12 nav-main nav-links inline active" style="float:left">
-                    <a href="">
+                    <a href="#navbar">
                         <ul style="list-style-type: none">
                             <li class="navlink-en">About</li>
                             <li class="navlink-jp">プロファイル</li>
@@ -124,7 +170,7 @@
 
                 <!-- illustrations link div -->
                 <div class="col-3of12 nav-main nav-links inline" style="float:left">
-                    <a href="">
+                    <a href="#navbar">
                         <ul style="list-style-type: none">
                             <li class="navlink-en">Illustrations</li> 
                             <li class="navlink-jp">ギャラリー</li>
@@ -134,7 +180,7 @@
 
                 <!-- past work link div -->
                 <div class="col-3of12 nav-main inline nav-links" style="float:left">
-                    <a href="">
+                    <a href="#navbar">
                         <ul style="list-style-type: none">
                             <li class="navlink-en">Past Work </li>
                             <li class="navlink-jp">制作実績</li> 
@@ -144,7 +190,7 @@
 
                 <!-- contact link div -->
                 <div class="col-3of12 nav-main nav-links inline">
-                    <a href="">
+                    <a href="#navbar">
                         <ul style="list-style-type: none">
                             <li class="navlink-en">Contact</li> 
                             <li class="navlink-jp">ご依頼、ご連絡</li> 
@@ -156,11 +202,11 @@
 
         </div>
 
-        <ul><br>
+        <ul style="list-style-type: none; padding-left: 0"><br>
             <li><strong>CSS Selector:</strong> nav-main, nav-links, inline, active</li>
             <li><strong>Sample code:</strong> </li>
 
-            <div style="background-color:grey; width:auto">
+            <div style="background-color:#EEE; width:50%; padding:1em 0 1em 3em">
             <code >
 
                 &lt;div class="col-3of12 nav-main nav-links inline active"&gt;<br>
@@ -193,7 +239,7 @@
 <div>
 <section id="page-heading-links"><h1>PAGE HEADING LINKS</h1></section><hr>
     <div style="padding:1em 0 0 2em">
-    <div class="page-heading-links"><a href="">Page Heading Links</a></div>
+    <div class="page-heading-links" style="padding-top:0"><a href="#page-heading-links">Page Heading Links</a></div>
     </div>
 </div>
 <br>
@@ -211,16 +257,30 @@
 </div>
 <br>
 
-
 <div>
-<section id=""><h1></h1></section><hr>
+<section id="images"><h1>Images</h1></section><hr><br>
     <div style="padding:1em 0 0 2em">
 
+    <ul style="list-style-type: none; padding-left: 0">
+        <li style="display:inline; padding-right:2em"><a href="img/attila.jpg" class="fancybox" rel="group"><img src="img/attila.jpg" style="max-height:300px"></a></li>
+        <li style="display:inline"><a href="img/ccs.jpg" class="fancybox" rel="group"><img src="img/ccs.jpg" style="max-height:300px"></a></li>
+    </ul>
+    <br>
+    <ul style="list-style-type: none; padding-left: 0">
+        <li><strong>Selector:</strong> .fancybox, .thumbnail-image, .thumbnail-image-wrapper</li>
+        <li>
+            <strong>Sample Code: </strong>
+            <div style="width: 50%; background-color: #EEE; padding:1em 0 1em 3em">
+                <code>
+                        &lt; li style="display:inline; padding-right:2em"&gt;&lt;a href="img/attila.jpg" class="fancybox" rel="group"&gt;&lt;img src="img/attila.jpg" style="max-height:300px"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li style="display:inline"&gt;&lt;a href="img/ccs.jpg" class="fancybox" rel="group"&gt;&lt;img src="img/ccs.jpg" style="max-height:300px"&gt;&lt;/a&gt;&lt;/li&gt;
+                </code>
+            </div>
+        </li>
+    </ul>
     </div>
 </div>
 <br>
-
-
 
 
 
