@@ -129,7 +129,7 @@ h2 {
     padding-left:0;
 }
 
-.nav-main a{
+.nav-width a{
     text-decoration: none;
     font-size: 1.2em;
     color: black;
@@ -214,10 +214,19 @@ h2 {
 
 .active {
     background-color: #c19E84;
+    color: white;
 }
 
-.active a{
-    color: white;
+/*footer*/
+
+.footer {
+    position: 
+    absolute; 
+    bottom:1vh;
+    font-size: 0.7em;
+    letter-spacing: .2em;
+    text-decoration: underline;
+    color: #c19E84 !important;
 }
 
 
@@ -391,20 +400,6 @@ h2 {
     float:left;
 }
 
-
-
-/*footer*/
-
-.footer {
-    position: 
-    absolute; 
-    bottom:1vh;
-}
-
-.footer-links {
-    font-size: 0.7em; 
-    letter-spacing: .2em;
-}
 
 
 /**********************************************************/
