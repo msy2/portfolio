@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styleguide</title>
+
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/grid.css"> 
+
+</head>
+
+
+<body>
+
+
+
+<div> <!-- page wrap div begin -->
+
+
+<!-- Styleguide Title -->
+
+    <div style="position: relative; display:block; height:auto">
+        <div class="page-heading">
+            <div class="page-heading-title"><h1><strong>MARCO YUEN: PORTFOLIO STYLEGUIDE</strong></h1></div>
+        </div>
+    </div>
+<br>
+
+<!-- styleguide menu -->
+<ul style="list-style-type: none; line-height: 1.2em">
+
+    <li><a href="#text">Text</a></li>
+    <li><a href="#colours">Colours</a></li>
+    <li><a href="#navbar">Navbar</a></li>
+    <li><a href="#page-heading">Page Heading</a></li>
+    <li><a href="#page-heading-links">Page Heading Links</a></li>
+    <li><a href="#bulleted-lists">Bulleted Lists</a></li>
+
+</ul>
+
+<!-- content begin -->
+
+    <div class="back-to-top-link" style="left:91%">
+        <a href="#top" class="link-no-underline">
+            <ul class="back-to-top-text">
+                <li>▲</li>
+                <li>RETURN</li>
+                <li>TO TOP</li>
+            </ul>
+        </a>
+    </div>
+
+    <div class="circle" style="left:91%; !important"></div>
+
+<div style="padding:2em">
+
+
+<div>
+<section id="back-to-top"><h1>BACK TO TOP BUTTON</h1></section><hr>
+<div style="padding:2em 0 0 2em">
+    <div>
+        <ul>
+            <li>CSS Selector: .back-to-top</li>
+            <li>Sample code: <code><div class="back-to-top-link" style="left:91%">
+        <a href="#top" class="link-no-underline">
+            <ul class="back-to-top-text">
+                <li>▲</li>
+                <li>RETURN</li>
+                <li>TO TOP</li>
+            </ul>
+        </a>
+    </div></code>
+    </li>
+        </ul>
+    </div>
+    </div>
+    </div>
+<br>
+
+
+<div>
+<section id="text"><h1>TEXT</h1></section><hr>
+    <div style="padding:1em 0 0 2em">
+            <h2>Font: 小塚ゴシック Pro</h2>
+            <h1>h1 heading</h1>
+            <h2>h2 heading</h2>
+            <p class="weight-600">weight-600</p>
+            <p class="weight-500">weight-500</p>
+            <p class="weight-200">weight-200</p>
+            <p>paragraph</p>
+            <p class="italic">italic</p>
+    </div>
+</div>
+<br>
+
+<div>
+<section id="colours"><h1>COLOURS</h1></section><hr>
+<div style="padding:2em 0 0 2em">
+    <div style="background-color: #c19E84; color:white; display:inline;padding:1.5em 3em 1.5em 3em">#c19E84</div><div style="background-color: #FFFFFF; color:black; display:inline; padding:1.5em 3em 1.5em 3em;border-color: #c19E84; border-style:dotted; border-width: 1px">#FFFFFF </div>
+    </div>
+    </div>
+<br>
+
+<br>
+<section id="navbar"><h1>NAVBAR</h1></section>
+<hr>
+    <div style="padding:1em 0 0 2em">
+        <!-- main nav -->
+        <div class="col-8of12">
+
+            <div class="inline">
+
+                <!-- about link div -->
+                <div class="col-3of12 nav-main nav-links inline active" style="float:left">
+                    <a href="">
+                        <ul style="list-style-type: none">
+                            <li class="navlink-en">About</li>
+                            <li class="navlink-jp">プロファイル</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <!-- illustrations link div -->
+                <div class="col-3of12 nav-main nav-links inline" style="float:left">
+                    <a href="">
+                        <ul style="list-style-type: none">
+                            <li class="navlink-en">Illustrations</li> 
+                            <li class="navlink-jp">ギャラリー</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <!-- past work link div -->
+                <div class="col-3of12 nav-main inline nav-links" style="float:left">
+                    <a href="">
+                        <ul style="list-style-type: none">
+                            <li class="navlink-en">Past Work </li>
+                            <li class="navlink-jp">制作実績</li> 
+                        </ul>
+                    </a>
+                </div>
+
+                <!-- contact link div -->
+                <div class="col-3of12 nav-main nav-links inline">
+                    <a href="">
+                        <ul style="list-style-type: none">
+                            <li class="navlink-en">Contact</li> 
+                            <li class="navlink-jp">ご依頼、ご連絡</li> 
+                        </ul>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <ul><br>
+            <li><strong>CSS Selector:</strong> nav-main, nav-links, inline, active</li>
+            <li><strong>Sample code:</strong> </li>
+
+            <div style="background-color:grey; width:auto">
+            <code >
+
+                &lt;div class="col-3of12 nav-main nav-links inline active"&gt;<br>
+                    &lt;a href=""&gt;<br>
+                        &lt;ul&gt;<br>
+                            &lt;li class="navlink-en"&gt;About&lt;/li &gt;<br>
+                            &lt;li class="navlink-jp"&gt;プロファイル&lt;/li &gt;<br>
+                        &lt;/ul&gt;<br>
+                    &lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+            </code>
+            </div >
+        </ul>
+
+
+    </div>
+<!-- end of main nav -->
+<br>
+
+
+<div>
+<section id="page-heading"><h1>PAGE HEADING</h1></section><hr>
+    <div class="page-heading" style="padding:1em 0 0 2em">
+    <div class="page-heading-title"> <h1>Page Heading</h1><hr></div>
+    </div>
+</div>
+<br>
+
+
+<div>
+<section id="page-heading-links"><h1>PAGE HEADING LINKS</h1></section><hr>
+    <div style="padding:1em 0 0 2em">
+    <div class="page-heading-links"><a href="">Page Heading Links</a></div>
+    </div>
+</div>
+<br>
+
+
+<div>
+<section id="bulleted-lists"><h1>BULLETED LISTS</h1></section><hr>
+    <div style="padding:1em 0 0 2em">
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    </div>
+</div>
+<br>
+
+
+<div>
+<section id=""><h1></h1></section><hr>
+    <div style="padding:1em 0 0 2em">
+
+    </div>
+</div>
+<br>
+
+
+
+
+
+
+
+
+</div>
+</div> <!-- page wrap div end -->
+
+
+
+</body>
+</html>

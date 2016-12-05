@@ -19,6 +19,25 @@
 <div> <!-- page wrap div begin -->
 
 
+<!-- hidden button on top of page for when page is under 768px -->
+<div class="hidden">
+	<div class="back-to-top-link">
+		<a href="#top" class="link-no-underline">
+			<ul class="back-to-top-text">
+				<li>▲</li>
+				<li>RETURN</li>
+				<li>TO TOP</li>
+			</ul>
+		</a>
+	</div>
+
+	<div class="circle"></div>
+</div>
+
+
+
+<section id="top">
+
 <!-- main nav -->
 	<div class="nav-width">
 
@@ -26,14 +45,16 @@
 		<div class="nav-main nav-header">
 			<a href="index.html">
 				<div>
-				<h1 class="jp">まるこ・えす・ゆえん</h1>
-				<h2>marco s. yuen</h2>
+				<li class="jp logo-jp">まるこ・えす・ゆえん</li>
+				<li class="logo-en">marco s. yuen</li>
 				</div>
 
-				<div class="nav-info">
-				<h4>ILLUSTRATOR</h4>
-				<h4>Vancouver,BC</h4>
-				<h4>y.marco@gmail.com</h4>	
+				<div class="nav-info logo-subtext">
+				<ul>
+					<li>ILLUSTRATOR</li>
+					<li>Vancouver,BC</li>
+					<li>y.marco@gmail.com</li>	
+				</ul>
 				</div>
 			</a>	
 
@@ -41,43 +62,65 @@
 
 		<hr>
 
-		<div>
-			<!-- about div -->
-			<div class="nav-main nav-links nav-links-top-spacing">
+		<div class="block">
+			<!-- about link div -->
+			<div class="nav-main nav-links inline nav-links-top-spacing">
 				<a href=about.html>
-					<h5>About</h5>
-					<h3 class="jp">プロファイル</h3>
+					<ul>
+						<li class="navlink-en">About</li>
+						<li class="navlink-jp">プロファイル</li>
+					</ul>
 				</a>
 			</div>
 
 			<!-- illustrations link div -->
-			<div class="nav-main nav-links">
+			<div class="nav-main nav-links inline border-left">
 				<a href="illustrations.html">
-					<h5>Illustrations</h5> 
-					<h3>ギャラリー</h3>
+					<ul>
+						<li class="navlink-en">Illustrations</li> 
+						<li class="navlink-jp">ギャラリー</li>
+					</ul>
 				</a>
 			</div>
 
+			</div>
+
+			<div class="block">
+
 			<!-- past work link div -->
-			<div class="nav-main nav-links">
+			<div class="nav-main inline nav-links">
 				<a href="pastwork.html">
-					<h5>Past Work </h5>
-					<h3>制作実績</h3> 
+					<ul>
+						<li class="navlink-en">Past Work </li>
+						<li class="navlink-jp">制作実績</li> 
+					</ul>
 				</a>
 			</div>
 
 			<!-- contact link div -->
-			<div class="nav-main nav-links-bottom-spacing nav-links active">
+			<div class="nav-main nav-links inline border-left nav-links-bottom-spacing active">
 				<a href="contact.html">
-					<h5>Contact</h5> 
-					<h3>ご依頼、ご連絡</h3> 
+					<ul>
+						<li class="navlink-en">Contact</li> 
+						<li class="navlink-jp">ご依頼、ご連絡</li> 
+					<ul>
 				</a>
 			</div>
 
 		</div>
 		<hr>
 
-	</div>
+
+		<!-- footer -->
+		<div class="footer">
+		<ul>
+			<li><a href="styleguide.html" class="footer-links">Style Guide</a></li>
+			<li><a href="citations.html" class="footer-links">Citations</a></li>
+		</ul>			
+		</div>
+		<!-- footer end -->
+
+	</div>		
 <!-- end of main nav -->
 
 
@@ -86,13 +129,14 @@
 
 		<!-- page title/heading -->
 		<div class="page-heading">
-			<div class="page-heading-title"><h6>CONTACT</h6><hr></div>
+			<div class="page-heading-title"><h1>CONTACT</h1><hr></div>
 		</div>
 
 
 		<!-- page content -->
 		<div class="page-content">
-
+				<p><strong>Email:</strong></p>
+				<p>y.marco@gmail.com</p>
 		</div>
 
 	</div>

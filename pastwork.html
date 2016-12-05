@@ -19,6 +19,25 @@
 <div> <!-- page wrap div begin -->
 
 
+<!-- hidden button on top of page for when page is under 768px -->
+<div class="hidden">
+	<div class="back-to-top-link">
+		<a href="#top" class="link-no-underline">
+			<ul class="back-to-top-text">
+				<li>▲</li>
+				<li>RETURN</li>
+				<li>TO TOP</li>
+			</ul>
+		</a>
+	</div>
+
+	<div class="circle"></div>
+</div>
+
+
+
+<section id="top">
+
 <!-- main nav -->
 	<div class="nav-width">
 
@@ -26,14 +45,16 @@
 		<div class="nav-main nav-header">
 			<a href="index.html">
 				<div>
-				<h1 class="jp">まるこ・えす・ゆえん</h1>
-				<h2>marco s. yuen</h2>
+				<li class="jp logo-jp">まるこ・えす・ゆえん</li>
+				<li class="logo-en">marco s. yuen</li>
 				</div>
 
-				<div class="nav-info">
-				<h4>ILLUSTRATOR</h4>
-				<h4>Vancouver,BC</h4>
-				<h4>y.marco@gmail.com</h4>	
+				<div class="nav-info logo-subtext">
+				<ul>
+					<li>ILLUSTRATOR</li>
+					<li>Vancouver,BC</li>
+					<li>y.marco@gmail.com</li>	
+				</ul>
 				</div>
 			</a>	
 
@@ -41,42 +62,66 @@
 
 		<hr>
 
-		<div>
-			<!-- about div -->
-			<div class="nav-main nav-links nav-links-top-spacing screen-inline">
+		<div class="block">
+			<!-- about link div -->
+			<div class="nav-main nav-links inline nav-links-top-spacing">
 				<a href=about.html>
-					<h5>About</h5>
-					<h3 class="jp">プロファイル</h3>
+					<ul>
+						<li class="navlink-en">About</li>
+						<li class="navlink-jp">プロファイル</li>
+					</ul>
 				</a>
 			</div>
 
 			<!-- illustrations link div -->
-			<div class="nav-main nav-links screen-inline">
+			<div class="nav-main nav-links inline border-left">
 				<a href="illustrations.html">
-					<h5>Illustrations</h5> 
-					<h3>ギャラリー</h3>
+					<ul>
+						<li class="navlink-en">Illustrations</li> 
+						<li class="navlink-jp">ギャラリー</li>
+					</ul>
 				</a>
 			</div>
+
 			</div>
-			<div>
+
+			<div class="block">
+
 			<!-- past work link div -->
-			<div class="nav-main nav-links active screen-inline">
+			<div class="nav-main inline nav-links active">
 				<a href="pastwork.html">
-					<h5>Past Work </h5>
-					<h3>制作実績</h3> 
+					<ul>
+						<li class="navlink-en">Past Work </li>
+						<li class="navlink-jp">制作実績</li> 
+					</ul>
 				</a>
 			</div>
 
 			<!-- contact link div -->
-			<div class="nav-main nav-links-bottom-spacing nav-links screen-inline">
+			<div class="nav-main nav-links inline border-left nav-links-bottom-spacing">
 				<a href="contact.html">
-					<h5>Contact</h5> 
-					<h3>ご依頼、ご連絡</h3> 
+					<ul>
+						<li class="navlink-en">Contact</li> 
+						<li class="navlink-jp">ご依頼、ご連絡</li> 
+					<ul>
 				</a>
 			</div>
 
 		</div>
 		<hr>
+
+
+
+		<!-- footer -->
+		<div class="footer">
+		<ul>
+			<li><a href="styleguide.html" class="footer-links">Style Guide</a></li>
+			<li><a href="citations.html" class="footer-links">Citations</a></li>
+		</ul>			
+		</div>
+		<!-- footer end -->
+
+
 
 	</div>
 <!-- end of main nav -->
@@ -87,14 +132,148 @@
 
 		<!-- page title/heading -->
 		<div class="page-heading">
-			<div class="page-heading-title"><h6>PAST WORK</h6><hr></div>
-		</div>
+			<div class="page-heading-title"><h1>PAST WORK</h1><hr></div>
+		
 
+			<div class="page-heading-links hidden">
+				<ul>
+					<li><a href="#english">English</a></li>
+					<li><a href="#japanese">日本語</a></li>
+				</ul>
+			</div>
+		</div>
 
 		<!-- page content -->
 		<div class="page-content">
-			<div>
-				
+			<div class="past-work">
+
+					<div class="past-work-text-left">				
+					<section id="english">
+						<ul>
+							<li><strong>WORKS HISTORY</strong></li>
+							<br>
+							<li>Developer: ActozSoft, Square Enix</li>
+							<li>Game Title: Million Engi (no longer in service)</li>
+							<li>Character art illustrated: Hao Zhao</li>
+							<br>
+							<li>Developer: <a href="http://www.mti.co.jp/" target="_blank">MTI Ltd.</a> / entag!</li>
+							<li>Game Title: <a href="http://entag.mopita.com/prlp/danganpirates.html" target="_blank">Bullet Pirates! The Promised Land</a></li>
+							<li>Character art illustrated: Nyarlathotep, Ubbo Sathla, Zstylzhemgni</li>
+							<br>
+							<li>Poster design for panel Sound of the Future:</li>
+							<li>September 26 to 28, 2014</li>
+							<li>Anime Weekend Atlanta, Atlanta, GA</li>
+							<br>
+							<li class="weight-600">Self-published work/doujinshi:</li>
+							<br>
+							<li class="weight-500">Comic Market</li>
+							<li class="weight-500">Tokyo Big Sight, Tokyo, Japan:</li><hr>
+
+							<li class="italic">"Full Speed Ahead!"</li>
+							<li class="weight-200">August 15 2014, Comic Market 86</li>
+							<li>Kantai Collection Illustration Fanbook</li><hr>
+
+							<li class="italic">"Fair Winds and Following Seas"</li>
+							<li>December 29 2014, Comic Market 87</li>
+							<li>Kantai Collection Illustration Fanbook</li><hr>
+
+							<li class="italic">"Zephyr"</li>
+							<li>August 14 2015, Comic Market 88</li>
+							<li>Kantai Collection Illustration Fanbook</li><hr>
+
+							<li class="italic">"Here &amp; Now!"</li>
+							<li>December 30 2015, Comic Market 89</li>
+							<li>Kantai Collection Illustration Fanbook</li><hr>
+
+							<li class="italic">"Bon Appetit!"</li>
+							<li>August 13 2016, Comic Market 90</li>
+							<li>Kantai Collection Illustration Fanbook</li><hr>
+
+							<li class="italic">"Voltage"</li>
+							<li>December 31st 2016, Comic Market 91</li>
+							<li>Fate/Grand Order Illustration Fanbook</li>
+							<br>
+							<li class="weight-500">Toramatsuri </li>
+							<li class="weight-500"s>Tokyo Big Sight, Tokyo, Japan:</li>
+							<li>June 21 2015</li>
+							<li>"Step by Step": Idolm@ster Cinderella Girls Illustration Fanbook</li>
+							<br>
+							<li class="weight-600">Print illustration and sales at various conventions:</li>
+							<li class="weight-500">Active: 2008-current</li>
+							<br>
+							<li class="weight-500">United States</li>
+							<li>Anime Expo, Los Angeles, CA</li>
+							<li>Anime Los Angeles, CA</li>
+							<li>Kintoki Con, Sacramento, CA</li>
+							<li>Sakura Con, Seattle, WA</li>
+							<br>
+							<li class="weight-500">Canada</li>					
+							<li>Akimatsuri, Vancouver, BC</li>
+							<li>Anime Revolution, Vancouver, BC</li>
+							<li>Anime Evolution, Vancouver, BC</li>
+							<li>Minicomi, Vancouver, BC</li>
+							<li>Tsukino Con, Victoria, BC</li>
+							<li>SFU Summer Festival, Vancouver, BC</li>
+							<li>Otafest, Calgary, AB</li>
+							<li>Anime North, Toronto, ON</li>
+							<br><br>
+							<li>For work inquiries and contact, please feel free to e-mail:</li>
+							<li>y.marco@gmail.com</li>
+						</ul>
+						</section>
+					</div>
+
+				<div class="past-work-text-right">
+					<section id="japanese">
+					<ul>
+						<li><strong>制作実績</strong></li>
+						<br>
+						<li>制作会社：ActozSoft様, スクウェア・エニックス株式会社</li>
+						<li>タイトル：ミリオン演義</li>
+						<li>キャラクターイラスト：郝昭</li>
+						<br>
+						<li>制作会社：<a href="http://www.mti.co.jp/" target="_blank">株式会社エムティーアイ</a>、 entag!様</li>
+						<li>タイトル：<a href="http://entag.mopita.com/prlp/danganpirates.html" target="_blank">弾丸パイレーツ！約束の地</a></li>
+						<li>イラスト：ニャルラトホテプ、ウボ・サスラ、ズスティルゼムグニ</li>
+						<br>
+						<li>ポスターデザイン：The Sound of the Future みらいのねいろ</li>
+						<li>開催地：アメリカ合衆国アトランタ州ジョージア</li>
+						<li>アニメウィークエンド・アトランタ </li>
+						<li>開催日：2014年 9月26日-28日</li>
+						<br>
+						<li class="weight-600">同人活動：</li>
+						<li>コミックマーケット86発行 「Full Speed Ahead!」</li>
+						<li>コミックマーケット87発行 「Fair Winds and Following Seas」</li>
+						<li>コミックマーケット88発行 「Zephyr」</li>
+						<li>コミックマーケット89発行 「Here &amp; Now!」</li>
+						<li>コミックマーケット90発行 「Bon Appetit!」</li>
+						<li>コミックマーケット91発行 「Voltage」</li>
+						<li>とらまつり2015発行 「Step by Step」</li>
+						<br>
+						<li class="weight-600">日本国外での活動</li>
+						<br>
+						<li class="weight-500">アメリカ合衆国：2011年から現在</li>
+						<li>Anime Expo - カリフォルニア州ロサンゼルス</li>
+						<li>Anime Los Angeles - カリフォルニア州ロサンゼルス</li>
+						<li>Kintoki-Con - カリフォルニア州サクラメント</li>
+						<li>Sakura-Con - ワシントン州シアトル</li>
+						<br>
+						<li class="weight-500">カナダ：2008年から現在</li>
+						<li>Anime Revolution - ブリティッシュコロンビア州バンクーバー</li>
+						<li>Anime Evolution - ブリティッシュコロンビア州バンクーバー</li>
+						<li>Akimatsuri - ブリティッシュコロンビア州バンクーバー</li>
+						<li>Minicomi - ブリティッシュコロンビア州バンクーバー</li>
+						<li>Tsukino-Con - ブリティッシュコロンビア州ビクトリア</li>
+						<li>SFU Summer Festival - ブリティッシュコロンビア州バンクーバー</li>
+						<li>Otafest - アルバータ州カルガリー</li>
+						<li>Anime North - オンタリオ州トロント</li>
+						<br><br>
+						<li>仕事、問い合わせはメールにてお願いいたします。</li>
+						<li>y.marco@gmail.com</li>
+					</ul>
+					</section>
+				</div>
+
 			</div>
 		</div>
 
