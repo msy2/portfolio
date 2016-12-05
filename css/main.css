@@ -223,10 +223,13 @@ h2 {
     position: 
     absolute; 
     bottom:1vh;
-    font-size: 0.7em;
+}
+
+.footer a {
+    font-size: 0.8em;
     letter-spacing: .2em;
     text-decoration: underline;
-    color: #c19E84 !important;
+    color: #c19E84;
 }
 
 
