@@ -55,8 +55,6 @@ h2 {
 
 .back-to-top-link {
     position:fixed; 
-    bottom:.7em; 
-    left:-1.4em; 
     z-index: 1000;
 }
 
@@ -65,6 +63,9 @@ h2 {
 }
 
 .back-to-top-text {
+    position:absolute;
+    top:1.15em;
+    left:.3em;
     list-style-type:none; 
     line-height: 1.5em; 
     text-align: center;
@@ -85,6 +86,11 @@ h2 {
      z-index: 999;
 }
 
+.circle:hover{
+    background-color: #e5c8b3;
+    color:grey;
+    transition: 0.5s;
+}
 
 
 
@@ -499,7 +505,7 @@ h2 {
         width:100%;
         height:auto;
         display:block;
-        padding-left:11vw;
+        padding-left:8vw;
         padding-bottom:8em;
     }
 
